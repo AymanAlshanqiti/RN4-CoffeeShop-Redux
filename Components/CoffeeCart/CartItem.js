@@ -7,7 +7,7 @@ class CartItem extends Component {
   render() {
     const { item } = this.props;
     return (
-      <ListItem style={{ borderBottomWidth: 0 }}>
+      <ListItem style={{ borderBottomWidth: 0, alignContent: "center" }}>
         <Left>
           <Text style={{ color: "white", marginLeft: 16 }}> {item.drink} </Text>
           <Text note style={{ marginLeft: 16 }}>
@@ -15,7 +15,7 @@ class CartItem extends Component {
           </Text>
         </Left>
         <Body>
-          <Text style={{ color: "white" }}>{item.quantity}</Text>
+          <Text style={{ color: "white", left: 50 }}>{item.quantity}</Text>
         </Body>
         <Right>
           <Button
