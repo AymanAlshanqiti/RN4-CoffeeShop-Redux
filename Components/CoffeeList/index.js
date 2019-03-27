@@ -36,7 +36,8 @@ class CoffeeList extends Component {
 }
 
 const mapStateToProps = state => ({
-  coffeeReducer: state.coffeeReducer
+  coffeeReducer: state.coffeeReducer,
+  cartItemsCount: state.cartReducer.items
 });
 
 export default connect(mapStateToProps)(CoffeeList);
