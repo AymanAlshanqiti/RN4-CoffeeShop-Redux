@@ -7,8 +7,8 @@ class CartButton extends Component {
     return (
       <Icon
         onPress={() => this.props.navigation.navigate("CoffeeCart")}
-        name="shoppingcart"
-        type="AntDesign"
+        name="cart"
+        style={{ right: 10, color: "white" }}
       />
     );
   }

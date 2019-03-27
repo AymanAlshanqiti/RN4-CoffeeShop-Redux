@@ -27,7 +27,7 @@ const BottomNav = createBottomTabNavigator(
             iconType = "MaterialCommunityIcons";
             break;
           case "Order":
-            iconName = "cart";
+            iconName = "notebook";
             iconType = "MaterialCommunityIcons";
             break;
           default:
@@ -35,7 +35,11 @@ const BottomNav = createBottomTabNavigator(
             iconType = "MaterialCommunityIcons";
         }
         return (
-          <Icon name={iconName} type={iconType} style={{ color: tintColor }} />
+          <Icon
+            name={iconName}
+            type={iconType}
+            style={{ color: tintColor, fontSize: 25 }}
+          />
         );
       }
     }),
