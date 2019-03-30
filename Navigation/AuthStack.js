@@ -1,4 +1,4 @@
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 
 import Login from "../Components/Login";
 import Profile from "../Components/Profile";
